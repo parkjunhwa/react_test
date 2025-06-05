@@ -1,0 +1,22 @@
+.card {
+  width: 300px;
+  margin: 16px;
+  text-align: center;
+  
+  .icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #1890ff;
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #262626;
+  }
+  
+  .description {
+    color: #8c8c8c;
+    font-size: 14px;
+  }
+} 
