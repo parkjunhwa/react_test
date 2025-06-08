@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import { Layout, Menu, Button, theme } from 'antd';
-import { MenuFoldOutlined, MenuUnfoldOutlined, HomeOutlined, FormOutlined } from '@ant-design/icons';
+import { 
+  MenuFoldOutlined, 
+  MenuUnfoldOutlined, 
+  HomeOutlined, 
+  FormOutlined,
+  TableOutlined,
+  MessageOutlined,
+  MenuOutlined,
+  EditOutlined,
+  AppstoreOutlined
+} from '@ant-design/icons';
 import { Link, useLocation, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -33,9 +43,63 @@ const MainLayout: React.FC = () => {
       label: <Link to="/">홈</Link>,
     },
     {
-      key: '/form-example',
-      icon: <FormOutlined />,
-      label: <Link to="/form-example">폼 예제</Link>,
+      key: 'data-entry',
+      icon: <EditOutlined />,
+      label: 'Data Entry',
+      children: [
+        {
+          key: '/data-entry',
+          label: <Link to="/data-entry">입력 컴포넌트</Link>,
+        },
+        {
+          key: '/form-example',
+          label: <Link to="/form-example">폼 예제</Link>,
+        },
+      ],
+    },
+    {
+      key: 'data-display',
+      icon: <TableOutlined />,
+      label: 'Data Display',
+      children: [
+        {
+          key: '/data-display',
+          label: <Link to="/data-display">데이터 표시</Link>,
+        },
+      ],
+    },
+    {
+      key: 'feedback',
+      icon: <MessageOutlined />,
+      label: 'Feedback',
+      children: [
+        {
+          key: '/feedback',
+          label: <Link to="/feedback">피드백</Link>,
+        },
+      ],
+    },
+    {
+      key: 'navigation',
+      icon: <MenuOutlined />,
+      label: 'Navigation',
+      children: [
+        {
+          key: '/navigation',
+          label: <Link to="/navigation">네비게이션</Link>,
+        },
+      ],
+    },
+    {
+      key: 'other',
+      icon: <AppstoreOutlined />,
+      label: 'Other',
+      children: [
+        {
+          key: '/other',
+          label: <Link to="/other">기타 컴포넌트</Link>,
+        },
+      ],
     },
   ];
 
@@ -61,6 +125,7 @@ const MainLayout: React.FC = () => {
           theme="dark"
           mode="inline"
           selectedKeys={[location.pathname]}
+          defaultOpenKeys={['data-entry', 'data-display', 'feedback', 'navigation', 'other']}
           items={menuItems}
         />
       </Sider>

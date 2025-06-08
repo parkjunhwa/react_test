@@ -1,0 +1,60 @@
+.container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  height: 100%;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.optionGroup {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.radioGroup {
+  @extend .optionGroup;
+}
+
+.checkboxGroup {
+  @extend .optionGroup;
+}
+
+:global {
+  .ant-form-item {
+    margin-bottom: 24px;
+  }
+
+  .ant-upload {
+    width: 100%;
+  }
+
+  .ant-upload-drag {
+    height: 200px;
+  }
+
+  .ant-slider {
+    margin: 16px 0;
+  }
+
+  .ant-rate {
+    margin: 16px 0;
+  }
+
+  .ant-radio-wrapper {
+    margin-right: 0;
+  }
+
+  .ant-checkbox-wrapper {
+    margin-right: 0;
+  }
+} 
