@@ -2,7 +2,7 @@
   "name": "react_test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://사용자이름.github.io/react_test",
+  "homepage": "https://parkjunhwa.github.io/react_test",
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
     "@testing-library/dom": "^10.4.0",
