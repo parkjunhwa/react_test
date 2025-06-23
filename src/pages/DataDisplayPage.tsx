@@ -1,9 +1,9 @@
 import React from 'react';
 import { Table, List, Card, Avatar, Tag, Space, Typography, Row, Col } from 'antd';
-import { UserOutlined, StarOutlined, LikeOutlined, MessageOutlined } from '@ant-design/icons';
+import { StarOutlined, LikeOutlined, MessageOutlined } from '@ant-design/icons';
 import styles from './DataDisplayPage.module.scss';
 
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 
 const DataDisplayPage: React.FC = () => {
   // Table 데이터

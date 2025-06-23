@@ -4,12 +4,13 @@ import {
   MenuFoldOutlined, 
   MenuUnfoldOutlined, 
   HomeOutlined, 
-  FormOutlined,
   TableOutlined,
   MessageOutlined,
   MenuOutlined,
   EditOutlined,
-  AppstoreOutlined
+  AppstoreOutlined,
+  FileTextOutlined,
+  CheckSquareOutlined
 } from '@ant-design/icons';
 import { Link, useLocation, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
@@ -101,6 +102,28 @@ const MainLayout: React.FC = () => {
         },
       ],
     },
+    {
+      key: 'sample',
+      icon: <FileTextOutlined />,
+      label: 'Sample',
+      children: [
+        {
+          key: '/sample',
+          label: <Link to="/sample">샘플 페이지</Link>,
+        },
+      ],
+    },
+    {
+      key: 'todo',
+      icon: <CheckSquareOutlined />,
+      label: 'Todo',
+      children: [
+        {
+          key: '/todo',
+          label: <Link to="/todo">할 일 목록</Link>,
+        },
+      ],
+    },
   ];
 
   return (
@@ -125,7 +148,7 @@ const MainLayout: React.FC = () => {
           theme="dark"
           mode="inline"
           selectedKeys={[location.pathname]}
-          defaultOpenKeys={['data-entry', 'data-display', 'feedback', 'navigation', 'other']}
+          defaultOpenKeys={['data-entry', 'data-display', 'feedback', 'navigation', 'other', 'sample', 'todo']}
           items={menuItems}
         />
       </Sider>

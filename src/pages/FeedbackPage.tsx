@@ -21,7 +21,7 @@ import {
 } from '@ant-design/icons';
 import styles from './FeedbackPage.module.scss';
 
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 const { confirm } = Modal;
 
 const FeedbackPage: React.FC = () => {

@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import {
   Calendar,
-  Carousel,
-  Collapse,
-  Timeline,
-  Tree,
-  Card,
-  Row,
-  Col,
   Typography,
   Badge,
   Tag,
@@ -20,11 +13,6 @@ import {
   Tooltip
 } from 'antd';
 import {
-  ClockCircleOutlined,
-  CheckCircleOutlined,
-  CloseCircleOutlined,
-  SyncOutlined,
-  DownOutlined,
   UpOutlined,
   SmileOutlined,
   HeartOutlined,
@@ -35,12 +23,9 @@ import {
 } from '@ant-design/icons';
 import type { CalendarMode } from 'antd/es/calendar/generateCalendar';
 import type { Dayjs } from 'dayjs';
-import dayjs from 'dayjs';
 import styles from './OtherComponentsPage.module.scss';
 
 const { Title, Text } = Typography;
-const { Panel } = Collapse;
-const { Link } = Anchor;
 
 const OtherComponentsPage: React.FC = () => {
   const [calendarMode, setCalendarMode] = useState<CalendarMode>('month');
@@ -80,72 +65,7 @@ const OtherComponentsPage: React.FC = () => {
     );
   };
 
-  // Carousel 데이터
-  const carouselItems = [
-    {
-      title: '첫 번째 슬라이드',
-      content: 'React와 TypeScript를 사용한 웹 애플리케이션',
-      color: '#108ee9',
-    },
-    {
-      title: '두 번째 슬라이드',
-      content: 'Ant Design 컴포넌트 라이브러리',
-      color: '#52c41a',
-    },
-    {
-      title: '세 번째 슬라이드',
-      content: '모던한 UI/UX 디자인',
-      color: '#722ed1',
-    },
-  ];
 
-  // Timeline 데이터
-  const timelineItems = [
-    {
-      color: 'green',
-      children: '프로젝트 시작',
-    },
-    {
-      color: 'blue',
-      children: '기획 및 디자인',
-    },
-    {
-      color: 'red',
-      children: '개발 진행 중',
-    },
-    {
-      color: 'gray',
-      children: '테스트 및 배포',
-    },
-  ];
-
-  // Tree 데이터
-  const treeData = [
-    {
-      title: '프로젝트',
-      key: '0',
-      children: [
-        {
-          title: '프론트엔드',
-          key: '0-0',
-          children: [
-            { title: 'React', key: '0-0-0' },
-            { title: 'TypeScript', key: '0-0-1' },
-            { title: 'Ant Design', key: '0-0-2' },
-          ],
-        },
-        {
-          title: '백엔드',
-          key: '0-1',
-          children: [
-            { title: 'Node.js', key: '0-1-0' },
-            { title: 'Express', key: '0-1-1' },
-            { title: 'MongoDB', key: '0-1-2' },
-          ],
-        },
-      ],
-    },
-  ];
 
   return (
     <div className={styles.container}>

@@ -20,11 +20,7 @@ import {
   AppstoreOutlined,
   TeamOutlined,
   FileOutlined,
-  DashboardOutlined,
-  ShoppingCartOutlined,
-  HeartOutlined,
-  StarOutlined,
-  FireOutlined
+  DashboardOutlined
 } from '@ant-design/icons';
 import styles from './NavigationPage.module.scss';
 

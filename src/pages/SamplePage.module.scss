@@ -1,0 +1,184 @@
+.container {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: 100vh;
+
+  .ant-card {
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.3s ease;
+    }
+  }
+
+  .ant-statistic {
+    .ant-statistic-title {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .ant-statistic-content {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .ant-alert {
+    margin-bottom: 8px;
+    border-radius: 6px;
+  }
+
+  .ant-progress {
+    margin-bottom: 16px;
+  }
+
+  .ant-table {
+    .ant-table-thead > tr > th {
+      background: #fafafa;
+      font-weight: 600;
+    }
+  }
+
+  .ant-list-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .ant-timeline-item {
+    padding-bottom: 20px;
+
+    .ant-timeline-item-content {
+      margin-left: 16px;
+    }
+  }
+
+  .ant-steps {
+    margin-bottom: 24px;
+  }
+
+  .ant-space {
+    &.ant-space-vertical {
+      width: 100%;
+    }
+  }
+
+  .ant-btn {
+    border-radius: 6px;
+    font-weight: 500;
+
+    &.ant-btn-primary {
+      background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+      border: none;
+      box-shadow: 0 2px 4px rgba(24, 144, 255, 0.3);
+
+      &:hover {
+        background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+        box-shadow: 0 4px 8px rgba(24, 144, 255, 0.4);
+      }
+    }
+
+    &.ant-btn-danger {
+      background: linear-gradient(135deg, #ff4d4f 0%, #cf1322 100%);
+      border: none;
+      box-shadow: 0 2px 4px rgba(255, 77, 79, 0.3);
+
+      &:hover {
+        background: linear-gradient(135deg, #ff7875 0%, #ff4d4f 100%);
+        box-shadow: 0 4px 8px rgba(255, 77, 79, 0.4);
+      }
+    }
+  }
+
+  .ant-tag {
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .ant-avatar {
+    border-radius: 6px;
+  }
+
+  .ant-badge {
+    .ant-badge-count {
+      border-radius: 10px;
+      font-weight: 600;
+    }
+  }
+
+  .ant-collapse {
+    border-radius: 8px;
+    overflow: hidden;
+
+    .ant-collapse-header {
+      font-weight: 600;
+    }
+  }
+
+  .ant-tabs {
+    .ant-tabs-tab {
+      border-radius: 6px 6px 0 0;
+      font-weight: 500;
+    }
+
+    .ant-tabs-tab-active {
+      background: #e6f7ff;
+    }
+  }
+
+  .ant-modal {
+    .ant-modal-content {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .ant-modal-header {
+      background: #fafafa;
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
+
+  .ant-descriptions {
+    .ant-descriptions-item-label {
+      font-weight: 600;
+      color: #666;
+    }
+  }
+
+  // 반응형 디자인
+  @media (max-width: 768px) {
+    padding: 16px;
+
+    .ant-col {
+      margin-bottom: 16px;
+    }
+
+    .ant-statistic-content {
+      font-size: 20px !important;
+    }
+
+    .ant-space {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 12px;
+
+    .ant-card {
+      margin-bottom: 12px;
+    }
+
+    .ant-statistic-content {
+      font-size: 18px !important;
+    }
+  }
+} 

@@ -6,10 +6,10 @@ const { Title, Paragraph } = Typography;
 
 const HomePage: React.FC = () => {
   return (
-    <div className={styles.container}>
-      <Title level={2} className={styles.title}>
-        React + TypeScript + Ant Design 데모
-      </Title>
+      <div className={styles.container}>
+        <Title level={2} className={styles.title}>
+          React + TypeScript + Ant Design 데모
+        </Title>
       <Row gutter={[16, 16]}>
         <Col xs={24} sm={12} lg={8}>
           <Card title="시작하기" className={styles.card}>
@@ -41,9 +41,9 @@ const HomePage: React.FC = () => {
               • React Router
             </Paragraph>
           </Card>
-        </Col>
-      </Row>
-    </div>
+            </Col>
+        </Row>
+      </div>
   );
 };
 
