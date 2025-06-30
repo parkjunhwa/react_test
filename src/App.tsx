@@ -1,6 +1,6 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import koKR from 'antd/locale/ko_KR';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
